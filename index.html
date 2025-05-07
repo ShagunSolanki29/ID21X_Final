@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nikhil Shrivastava | A Friendly Neighborhood Educator</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+<header id="navbar">
+  <nav class="navbar">
+    <div class="nav-container">
+      <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#contact">Contact</a></li>      
+    </ul>
+    </div>
+  </nav>
+</header>
+
+
+  <!-- Hero Section with Background -->
+  <section class="hero-bg fade-in">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1 class="name">Nikhil Shrivastava</h1>
+        <h3 class="subtitle">Passionate Tutor | B.Tech from MNIT Jaipur | BS from IIT Madras</h3>
+        <p class="location">📍 Jaipur, Rajasthan</p>
+        <p class="contact">WhatsApp & Telegram Communication Available | ☎️ +91-8209364594
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="resume-content fade-in" id="about">
+    <h2>🎓 About Me</h2>
+    <p>Hello! I am Nikhil Shrivastav, a dedicated tutor who believes in shaping young minds and preparing them for the challenges ahead. While pursuing my B.Tech from MNIT Jaipur and a BS from IIT Madras, I realized the importance of a strong academic foundation, especially in subjects like Mathematics and Science.</p>
+    <p>I teach students from grade 8 to grade 12, focusing primarily on Science and Math. My goal is to help students not only score well in exams but also understand the concepts in-depth, making them confident and independent learners.</p>
+    <p>Teaching for me is not just about sharing knowledge; it's about inspiring curiosity, creating a love for learning, and mentoring students to reach their highest potential.</p>
+  </section>
+
+  <!-- Courses Section -->
+  <section class="resume-content fade-in" id="courses">
+    <h2>📚 Courses Offered</h2>
+    <p>I offer personalized tutoring in the following subjects for students from 8th to 12th grade:</p>
+    <ul>
+      <li>📐 **Mathematics** – Covering Algebra, Geometry, Trigonometry, Calculus, and more</li>
+      <li>🔬 **Science** – Physics, Chemistry, Biology (for Class 8th to 12th)</li>
+    </ul>
+    <p><strong>Course Fees:</strong> Starting from ₹2,000/month to ₹5,000/month based on the course and grade level.</p>
+    <p>Each course is designed to provide deep learning and conceptual clarity. I offer flexible schedules and personalized coaching for each student. The course pricing varies based on the grade and the intensity of the subject matter.</p>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="resume-content fade-in" id="contact">
+    <h2>📞 Contact Me</h2>
+    <p>If you're interested in enrolling in one of my courses or need more information, feel free to reach out to me using the form below:</p>
+    <form action="thank-you.html" method="POST" id="contact-form">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </section>
+
+  <!-- Outro Line -->
+  <div class="outro fade-in">
+    <p>✨ <span>Designed with Passion,</span> <strong>Nikhil Shrivastava.</strong></p>
+  </div>
+
+  <script>
+    // Navbar fade on scroll
+    const navbar = document.querySelector(".navbar");
+    window.addEventListener("scroll", () => {
+      navbar.style.opacity = window.scrollY > 50 ? "0" : "1";
+      navbar.style.transition = "opacity 0.5s ease";
+    });
+  </script>
+</body>
+</html>
